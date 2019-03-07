@@ -1,0 +1,12 @@
+Question 1: 
+---------------
+This is a snapshot of a pageview activity log table
+
+
+Answer : 
+---------------
+
+Select Page_Id,To_Char(Visit_Date,'YYYY-MM-DD') Visit_Date, Count(Id) Total_User_Sessions
+From SamplePageviews
+Group By Page_Id, Visit_Date
+Order By 1
